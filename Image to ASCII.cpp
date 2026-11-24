@@ -102,47 +102,6 @@ int main(){
     //push_full_ascii_image(ascii_image , width , height);
     push_shrunken_ascii_image(ascii_image , shrunken_ascii_image , width , height , 1000);
 
-
-
-
-
-
-
-
-    //_________________________________
-
-
-    // Image Shrinker | Pushes image into vector<int>shrunken_ascii_image; 
-    // int new_width  = 1000;
-    // int new_height = height*new_width/width;
-
-    // for (int i = 0; i < new_height; i++)
-    // {
-    //     for (int j = 0; j < new_width; j++)
-    //     {
-    //         int initial_x = j*width/new_width;
-    //         int initial_y = i*height/new_height;
-
-    //         int index = initial_y*width + initial_x ;
-    //         shrunken_ascii_image.push_back(ascii_image[index]);
-    //     }
-        
-    // }
-    //______________________________________
-
-  //
-    // ofstream output("ascii_art.txt");
-
-    // for(int i = 0; i < new_height ;  i++){
-    //     for(int j = 0 ; j < new_width ; j++){
-    //         int index = i*new_width + j ;
-    //           output << shrunken_ascii_image[index] ;
-    //     }
-    //       output << '\n';
-    // }
-
-    // output.close();
-    
     stbi_image_free(image);
     return 0;
 }
