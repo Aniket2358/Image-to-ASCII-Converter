@@ -33,11 +33,11 @@ void push_shrunken_ascii_image
         
     }
 
-    ofstream output("ascii_art.txt");
+    ofstream output("ASCII_image.txt");
     for(int i = 0; i < new_height ;  i++){
         for(int j = 0 ; j < new_width ; j++){
             int index = i*new_width + j ;
-              output << shrunken_ascii_image[index] ;
+              output << shrunken_ascii_image[index];
         }
           output << '\n';
     }
@@ -53,7 +53,7 @@ void push_full_ascii_image
     int height
 )
 {
-  ofstream output("ascii_art.txt");
+  ofstream output("ASCII_image.txt");
 
    for(int i = 0; i < height ;  i++){
         for(int j = 0 ; j < width ; j++){
