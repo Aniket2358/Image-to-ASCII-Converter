@@ -7,7 +7,7 @@
 #include <fstream>
 using namespace std;
 
-// Call this function to shrink your ascii Image
+// Call this function to shrink and push your ascii Image into the text file
 void push_shrunken_ascii_image
 (
     vector<char>&ascii_image, 
@@ -44,7 +44,8 @@ void push_shrunken_ascii_image
     output.close();
 }
 
-//Call this function to push the full ascii image into the text file
+/*Call this function to push the full ascii image into the text file| I will not recommend calling this funtion
+if the image is larger than 700x700 pixles, as the output may not be clearly visible in a standerd windows text editiot*/
 void push_full_ascii_image
 (
     vector<char>&ascii_image,
